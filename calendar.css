@@ -1,0 +1,78 @@
+table{
+    table-layout: fixed;
+}
+
+#next_month_btn, #prev_month_btn {
+    border-radius: 10px;
+}
+
+#current-month-year{
+    text-align: center;
+}
+
+.newEvent{
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 410px;
+    padding: 30px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.newEvent .close-new-event-btn{
+    border: none;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.editEvent{
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 410px;
+    padding: 30px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.editEvent .close-edit-event-btn{
+    border: none;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.delete-event-btn, .edit-event-btn{
+    background-color: #e7e7e7;
+    color: black;
+    transition-duration: 0.4s;
+}
+
+.delete-event-btn:hover, .edit-event-btn:hover{
+    background-color: #555555;
+    color: white;
+}
+
+#message{
+    text-align: center;
+}
+
+#logout_div{
+    display: none;
+    position: absolute;
+}
+
+#share_div{
+    display: none;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+}

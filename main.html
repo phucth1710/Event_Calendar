@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="calendar.css">
+    <title>My Web Calendar</title>
+</head>
+<body>
+    <div class="container">
+        <div id="header" class="jumbotron">
+            <div id="logout_div">
+                <button id="logout_btn" class="btn btn-outline-dark btn-sm">Log Out</button>
+            </div>
+            <div class="row">
+                <div class="col-sm-6" id = "log-in">
+                    <h1>Log In</h1>
+                    <input type="text" id="login_username" placeholder="Username" />
+                    <input type="password" id="login_password" placeholder="Password" />
+                    <p></p>
+                    <button id="login_btn" class="btn btn-outline-dark btn-sm">Log In</button>
+                </div>
+                <div class="col-sm-6" id = "sign-up">
+                    <h1>Sign Up</h1>
+                    <p>
+                        <input type="text" placeholder="Full Name" id="signup_fullname" required/>
+                        <input type="email" placeholder="Email" id="signup_email" required/>
+                    </p>
+                    <input type="text" placeholder="Username" id="signup_username" required/>
+                    <input type="password" placeholder="Password" id="signup_password" required/>
+                    <button id="register_btn" class="btn btn-outline-dark btn-sm">Sign Up</button>
+                </div>
+            </div>
+            <br>
+            <h1 id="message">
+                Cloud Calendar
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                </svg>
+            </h1>
+        </div>
+
+        <div id="share_div">
+            Share Your Calendar to Your Friends
+            <input type="text" placeholder="Shared user" id="shared_user">
+            <button id="share_btn">Share</button>
+            <p></p>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-4"><button id="prev_month_btn" class="btn btn-outline-info">Previous Month</button></div>
+            <div class="col-sm-4" id="current-month-year">Month / Year</div>
+            <div class="col-sm-4"><button id="next_month_btn" class="float-right btn btn-outline-info">Next Month</button></div>
+        </div>
+        <br>
+
+        <div class="newEvent">
+            <button type="button" class="close-new-event-btn" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="text">New Event</div>
+            <div class="data"><input type="text" id="event_title" placeholder="Event Title" required></div>
+            <div class="data"><input type="text" id="event_time" placeholder="HH:MM" required></div>
+            <div class="data"><input type="text" id="participant" placeholder="Participants"></div>
+            <div class="submit-btn"><button id="add_event" >Add</button></div>
+            <!-- type="submit" -->
+        </div>
+
+        <div class="editEvent">
+            <button type="button" class="close-edit-event-btn" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="text">Edit Event</div>
+            <div class="data"><input type="text" id="edit_event_title" placeholder="Event Title" required></div>
+            <div class="data"><input type="text" id="edit_event_time" placeholder="HH:MM" required></div>
+            <div class="submit-btn"><button id="edit_event" class="btn btn-outline-warning" >Edit</button></div>
+            <!-- type="submit" -->
+        </div>
+
+
+        <table class="table table-bordered">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">Sunday</th>
+                <th scope="col">Monday</th>
+                <th scope="col">Tuesday</th>
+                <th scope="col">Wednesday</th>
+                <th scope="col">Thursday</th>
+                <th scope="col">Friday</th>
+                <th scope="col">Saturday</th>
+              </tr>
+            </thead>
+        </table>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src = "calendar.js"></script>
+    <script src = "signup.js"></script>
+</body>
+</html>
