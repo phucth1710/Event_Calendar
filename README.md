@@ -42,8 +42,4 @@ Phuc1234
 
 
 # Demo:
-Before:
 ![](images/before.png)
-
-After:
-![](images/after.png)
