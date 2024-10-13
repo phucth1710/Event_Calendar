@@ -1,9 +1,8 @@
 # Event Calendar 
-This project is part of CSE330 - Creative Programming and Rapid Prototyping  
-Kien Ta - Anh Le
+Phuc Ta
 
-Link to Our Calendar:
-http://ec2-13-250-43-149.ap-southeast-1.compute.amazonaws.com/~talekien1710/module5-group-module5-488493-488494/main.html
+Link to My Calendar:
+http://ec2-13-250-43-149.ap-southeast-1.compute.amazonaws.com/~tahongphuc1710/main.html
 
 # Basic functionality:
 
@@ -25,7 +24,7 @@ to the "owner" user. After sharing the event, the shared users have the right to
 
 ## 2. Group Event
 - Users can create group events that display on multiple users calendars. Once the event is shared, all participants have the right to edit/delete the event.
-Input the event participants separated by commas, for example: david, kien, anhle
+Input the event participants separated by commas, for example: phuc, kien
 
 
 ## 3. Password validation:
@@ -37,11 +36,9 @@ The password users register for must contain the following:
 
 
 # Registered users:
-talekien1710  
-Kien1234
+tahongphuc1710  
+Phuc1234
 
-anhvqle  
-helloVN84
 
 
 # Demo:
